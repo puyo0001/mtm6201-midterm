@@ -44,10 +44,36 @@ h2 {
 
 h1 {
   color: var(--secondary-color);
+  font-size: 2rem;
+}
+
+h2 {
+  padding: 0.8rem 0;
 }
 
 p {
   padding: 1rem 0;
+}
+
+/* Skip Links */
+
+.skip-links {
+  list-style: none;
+  color: #fff;
+}
+
+.skip-links a {
+  padding: 1rem;
+  position: absolute;
+  top: -3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.skip-links a:focus {
+  top: 0;
+  color: #fff;
+  background-color: black;
 }
 
 /* Header styling */
@@ -67,6 +93,10 @@ p {
   text-align: center;
 }
 
+#menu {
+  padding-bottom: 0.8rem;
+}
+
 nav {
   text-align: center;
 }
@@ -75,6 +105,14 @@ nav ul {
   display: block;
   text-align: center;
   list-style: none;
+}
+
+nav ul a {
+  display: inline-block;
+  color: var(--green);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 
 nav li a,
@@ -87,7 +125,8 @@ nav li a:visited {
 }
 
 nav li a:hover {
-  color: var(--green);
+  color: var(--secondary-color);
+  background-color: var(--green);
 }
 
 /* Content */
@@ -95,7 +134,7 @@ nav li a:hover {
 .container {
   display: grid;
   max-width: 1200px;
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin: 0 auto;
 }
 
@@ -191,7 +230,8 @@ iframe {
 /* Footer styling */
 
 footer {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 1rem 0;
   text-align: center;
   width: 100%;
@@ -206,6 +246,7 @@ footer {
 
   h2 {
     font-size: 3rem;
+    padding: 0.8rem 0;
   }
 
   h3 {
@@ -258,5 +299,6 @@ footer {
   .container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    padding: 2rem 0;
   }
 }

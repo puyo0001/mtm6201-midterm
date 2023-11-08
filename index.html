@@ -14,6 +14,29 @@
   </head>
   <body>
     <header>
+      <ul class="skip-links">
+        <li>
+          <a href="#navigation" aria-label="Skip to main navigation"
+            >Skip to main navigation</a
+          >
+        </li>
+        <li>
+          <a href="#main" aria-label="Skip to main content"
+            >Skip to main content</a
+          >
+        </li>
+        <li>
+          <a href="#contact" aria-label="Skip to meet the owner"
+            >Skip to contact sectiom</a
+          >
+        </li>
+        <li>
+          <a href="#adress" aria-label="Skip to contact section"
+            >Skip to adress section</a
+          >
+        </li>
+      </ul>
+
       <div class="promo">Get a 15% off in your first purchase</div>
 
       <div class="bg-dark" id="menu">
@@ -21,7 +44,7 @@
           <img src="images/logo.svg" alt="Moodelights logo" />
         </div>
 
-        <nav>
+        <nav id="navigation">
           <ul>
             <li><a href="#" aria-label="Home">Home</a></li>
             <li><a href="#" aria-label="Products">Products</a></li>
@@ -32,7 +55,7 @@
       </div>
     </header>
 
-    <section class="container">
+    <section id="main" class="container">
       <div class="text-block"><img src="images/hero-image.svg" alt="" /></div>
       <div class="text-block">
         <h1>What's your mood today?</h1>
@@ -47,19 +70,20 @@
           ultricies sed non odio. Curabitur eleifend ligula id neque consequat
           consectetur.
         </p>
-        <a href="" class="lilac-button">Button</a>
+        <a href="#" class="lilac-button">Products</a>
       </div>
     </section>
 
     <section>
-      <div class="bg-light">
+      <!--Form-->
+      <div id="contact" class="bg-light">
         <h2>Contact Us</h2>
 
         <div class="container">
           <div class="text-block">
             <h3>Send Us a message</h3>
 
-            <form id="message" action="#" method="get">
+            <form action="#" method="get">
               <div>
                 <label for="firstname">Full Name</label>
                 <input id="firstname" name="fname" type="text" />
@@ -80,7 +104,7 @@
           </div>
 
           <!--Google Maps Location-->
-          <div class="text-block">
+          <div id="adress" class="text-block">
             <h3>Adress</h3>
 
             <p itemscope itemtype="https://schema.org/PostalAddress">
@@ -107,6 +131,6 @@
 
     <!--Footer section-->
 
-    <footer class="bg-light">© Copyright Moodelights, 2023</footer>
+    <footer>© Copyright Moodelights, 2023</footer>
   </body>
 </html>
