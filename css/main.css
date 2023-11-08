@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #511565;
+  --light-purple: #dfd4ec;
+  --text-color: #212427;
+  --green: #a9f272;
+  --yellow: #fffea7;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styling */
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  display: block;
+  margin: 0 auto;
+}
+
+.bg-dark {
+  background-color: var(--secondary-color);
+}
+
+.bg-light {
+  background-color: var(--light-purple);
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Libre Bodoni", serif;
+  text-align: center;
+}
+
+h1 {
+  color: var(--secondary-color);
+}
+
+p {
+  padding: 1rem 0;
+}
+
+/* Header styling */
+
+#logo {
+  width: 220px;
+  padding: 0.5rem 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.promo {
+  background-color: var(--light-purple);
+  color: var(--secondary-color);
+  font-weight: 700;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  display: block;
+  text-align: center;
+  list-style: none;
+}
+
+nav li a,
+nav li a:link,
+nav li a:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+nav li a:hover {
+  color: var(--green);
+}
+
+/* Content */
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+.text-block {
+  display: block;
+  padding: 0.8rem;
+}
+
+/* Contact Us styling */
+
+input {
+  width: 100%;
+  height: 1.8rem;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+}
+
+.lilac-button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s;
+  box-shadow: 0px 6px 0px -2px var(--secondary-color);
+  background-color: var(--light-purple);
+  transition: background-color 0.5s ease;
+}
+
+.lilac-button:hover {
+  box-shadow: 0 0 var(--primary-color);
+  background-color: var(--green);
+  transform: translateY(1px);
+}
+
+.green-button {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--secondary-color);
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s;
+  box-shadow: 0px 6px 0px -2px var(--secondary-color);
+  background-color: var(--primary-color);
+  transition: background-color 0.5s ease;
+}
+
+.green-button:hover {
+  box-shadow: 0 0 var(--primary-color);
+  background-color: var(--green);
+  transform: translateY(1px);
+}
+
+label {
+  display: block;
+  padding: 0.3rem;
+}
+
+textarea {
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 0.8rem;
+}
+
+#send {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* Footer styling */
+
+footer {
+  color: var(--secondary-color);
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* DESKTOP STYLING */
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  header {
+    /* margin: 1.2rem; */
+  }
+
+  #menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  nav {
+    width: 90%;
+  }
+
+  #logo {
+    padding: 1rem;
+    width: 220px;
+  }
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    flex: 1;
+  }
+
+  nav li a,
+  nav li a:link,
+  nav li a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  nav li a:hover {
+    color: var(--green);
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
