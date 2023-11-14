@@ -15,6 +15,10 @@
 
 /* General styling */
 
+header {
+  background-color: var(--secondary-color);
+}
+
 body {
   background-color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
@@ -45,18 +49,13 @@ h2 {
 }
 
 h1 {
-  color: var(--secondary-color);
   font-size: 2rem;
-  margin: 3rem 0;
+  /* margin: 3rem 0; */
 }
 
 h2 {
-  padding: 0.8rem 0;
+  padding-top: 1rem;
 }
-
-/* p {
-  padding: 1.5rem 0;
-} */
 
 /* Skip Links */
 
@@ -69,14 +68,13 @@ h2 {
   padding: 1rem;
   position: absolute;
   top: -3rem;
-  color: black;
+  color: #fff;
   font-weight: bold;
 }
 
 .skip-links a:focus {
   top: 0;
   color: #fff;
-  background-color: black;
 }
 
 /* Header styling */
@@ -98,6 +96,9 @@ h2 {
 
 #menu {
   padding-bottom: 0.8rem;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 nav {
@@ -114,7 +115,7 @@ nav ul a {
   display: inline-block;
   color: var(--green);
   text-decoration: none;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   width: 100%;
 }
 
@@ -125,12 +126,13 @@ nav li a:visited {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 700;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
 }
 
 nav li a:hover,
 nav li a:focus {
   color: var(--green);
+  transform: scale(1.1);
 }
 
 /* Content */
@@ -169,8 +171,18 @@ nav li a:focus {
 .card {
   background-color: #fff;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   margin: 1rem 0.5rem;
+  border-radius: 2%;
+}
+
+.card img {
+  border-radius: 2%;
+}
+
+.highlight {
+  font-weight: 700;
+  color: var(--secondary-color);
 }
 
 .services-grid {
@@ -190,6 +202,14 @@ nav li a:focus {
 input {
   width: 100%;
   height: 1.8rem;
+}
+
+/* About image styling */
+
+.rounded-image {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Buttons styling */
@@ -305,7 +325,7 @@ footer {
 
   h2 {
     font-size: 3rem;
-    padding: 0.8rem 0;
+    padding: 5rem 0 0.8rem 0;
   }
 
   h3 {
@@ -314,6 +334,10 @@ footer {
 
   header {
     /* margin: 1.2rem; */
+  }
+
+  #logo img {
+    width: 220px;
   }
 
   #menu {
@@ -337,6 +361,10 @@ footer {
     padding: 0;
     margin: 0;
     display: flex;
+  }
+
+  nav ul a {
+    padding-top: 5rem;
   }
 
   nav ul li {

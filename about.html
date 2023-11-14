@@ -11,10 +11,15 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
     <header>
-      <!--Skip links-->
+      <!-- Skip links -->
       <ul class="skip-links">
         <li>
           <a href="#navigation" aria-label="Skip to main navigation"
@@ -22,22 +27,13 @@
           >
         </li>
         <li>
-          <a href="#main" aria-label="Skip to main content"
+          <a href="#about" aria-label="Skip to about us information"
             >Skip to main content</a
           >
         </li>
-        <li>
-          <a href="#contact" aria-label="Skip to meet the owner"
-            >Skip to contact sectiom</a
-          >
-        </li>
-        <li>
-          <a href="#adress" aria-label="Skip to contact section"
-            >Skip to adress section</a
-          >
-        </li>
       </ul>
-      <!--Promo Banner-->
+
+      <!-- Promo Banner -->
       <div class="promo">Get a 15% off in your first purchase</div>
 
       <div class="bg-dark" id="menu">
@@ -45,11 +41,13 @@
           <img src="images/logo.svg" alt="Moodelights logo" />
         </div>
 
-        <!--Navigation-->
+        <!-- Navigation -->
         <nav id="navigation">
           <ul>
             <li><a href="index.html" aria-label="Home">Home</a></li>
-            <li><a href="products.html" aria-label="Products">Products</a></li>
+            <li>
+              <a href="products.html" aria-label="Products">Products</a>
+            </li>
             <li><a href="#" aria-label="About Us">About Us</a></li>
             <li><a href="#" aria-label="Contact">Contact</a></li>
           </ul>
@@ -57,16 +55,49 @@
       </div>
     </header>
 
-    <!--Main Content-->
+    <!-- Main Content -->
+    <section id="about" class="container">
+      <div class="description-grid">
+        <div class="text-block">
+          <div class="text-block">
+            <img
+              srcset="images/baker-400.png 400w, images/baker-960.png 960w"
+              sizes="(max-width: 400px) 400px, 960px"
+              src="images/baker-960.png"
+              alt="Hannah Fisher, owner of Moodelights"
+              class="rounded-image"
+            />
+          </div>
+        </div>
 
-    <section id="main" class="container"></section>
+        <div class="text-block">
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            laoreet arcu elit. Vestibulum egestas mi vehicula, congue ligula
+            eget, consectetur dolor. Aliquam fermentum eget dolor vel ornare.
+            Nunc eget erat nunc. Nunc pulvinar dui in nunc aliquam, euismod
+            consectetur nunc sollicitudin. Donec ut cursus neque. Praesent
+            mollis neque et imperdiet cursus. Ut dignissim dapibus lorem rutrum
+            pretium. Fusce a enim vitae tortor malesuada lacinia. Nunc non felis
+            id erat luctus ultricies sed non odio. Curabitur eleifend ligula id
+            neque consequat consectetur.
+          </p>
+          <a href="#" class="lilac-button">Contact Us</a>
+        </div>
+      </div>
+    </section>
 
-    <!--Footer section-->
-
+    <!-- Footer Section -->
     <footer>
       <div>
-        <!--Facebook-->
-        <a href="#" target="_blank" rel="#">
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/"
+          aria-label="Moodelights Facebook link"
+          target="_blank"
+          rel="#"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -80,9 +111,13 @@
           </svg>
         </a>
 
-        <!--Instagram -->
-
-        <a href="#" target="_blank" rel="#">
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/"
+          aria-label="Moodelights Instagram link"
+          target="_blank"
+          rel="#"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -97,7 +132,12 @@
         </a>
 
         <!-- Youtube -->
-        <a href="#" target="_blank" rel="#">
+        <a
+          href="https://www.youtube.com"
+          aria-label="Moodelights Youtube link"
+          target="_blank"
+          rel="#"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
