@@ -319,6 +319,7 @@ footer {
 /* DESKTOP STYLING */
 
 @media screen and (min-width: 800px) {
+  /* General Styling */
   h1 {
     font-size: 4rem;
   }
@@ -331,11 +332,7 @@ footer {
   h3 {
     font-size: 1.8rem;
   }
-
-  header {
-    /* margin: 1.2rem; */
-  }
-
+  /* Desktop Navigation Styling */
   #logo img {
     width: 220px;
   }
@@ -370,6 +367,8 @@ footer {
   nav ul li {
     flex: 1;
   }
+
+  /* Desktop Content Styling */
 
   .description-grid {
     display: grid;
