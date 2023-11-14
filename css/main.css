@@ -18,7 +18,7 @@
 body {
   background-color: var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   display: block;
   margin: 0 auto;
@@ -34,26 +34,29 @@ body {
 
 img {
   width: 100%;
+  display: block;
 }
 
 h1,
 h2 {
   font-family: "Libre Bodoni", serif;
   text-align: center;
+  color: var(--secondary-color);
 }
 
 h1 {
   color: var(--secondary-color);
   font-size: 2rem;
+  margin: 3rem 0;
 }
 
 h2 {
   padding: 0.8rem 0;
 }
 
-p {
-  padding: 1rem 0;
-}
+/* p {
+  padding: 1.5rem 0;
+} */
 
 /* Skip Links */
 
@@ -122,25 +125,64 @@ nav li a:visited {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: 700;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-nav li a:hover {
-  color: var(--secondary-color);
-  background-color: var(--green);
+nav li a:hover,
+nav li a:focus {
+  color: var(--green);
 }
 
 /* Content */
 
 .container {
-  display: grid;
   max-width: 1200px;
   padding: 1rem 0;
   margin: 0 auto;
 }
 
+.description-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
 .text-block {
   display: block;
-  padding: 0.8rem;
+  padding: 1rem;
+}
+
+.text-block p {
+  padding: 1.5rem 0;
+}
+
+/* Product Cards */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0.5rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.products-grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 /* Contact Us styling */
@@ -150,6 +192,8 @@ input {
   height: 1.8rem;
 }
 
+/* Buttons styling */
+
 button {
   background-color: var(--secondary-color);
   color: var(--primary-color);
@@ -158,7 +202,7 @@ button {
 
 .lilac-button {
   display: flex;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   align-items: center;
   justify-content: center;
   line-height: 1;
@@ -213,7 +257,7 @@ label {
 
 textarea {
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   margin-bottom: 0.8rem;
 }
 
@@ -235,6 +279,21 @@ footer {
   padding: 1rem 0;
   text-align: center;
   width: 100%;
+}
+
+.my-icons {
+  display: inline;
+  fill: var(--primary-color);
+  width: 1.5rem;
+  margin: 1rem;
+}
+
+.my-icons path {
+  fill: var(--primary-color);
+}
+
+.my-icons:hover path {
+  fill: var(--green);
 }
 
 /* DESKTOP STYLING */
@@ -284,21 +343,18 @@ footer {
     flex: 1;
   }
 
-  nav li a,
-  nav li a:link,
-  nav li a:visited {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-  }
-
-  nav li a:hover {
-    color: var(--green);
-  }
-
-  .container {
+  .description-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 2rem 0;
+    grid-gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  textarea {
+    height: 10rem;
   }
 }
