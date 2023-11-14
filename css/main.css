@@ -380,7 +380,7 @@ footer {
   .products-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
+  /* Desktop Form Styling */
   textarea {
     height: 10rem;
   }
